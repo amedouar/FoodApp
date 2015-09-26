@@ -1,567 +1,199 @@
-body {
-  background-image: url("file:///Users/abdeslammedouar/Documents/AppProject/Website/background.jpg");
-  background-size: cover;
-  font-family: Lucida Console;
-  left: 0;
-  margin: 0;
-  overflow: scroll;
-  position: relative;
-  height:100%;
-  width: 100%;
-
-}
-
-h1, h2, h4,p{
-  color: white;
-}
-
-.top {
-  text-align: center;
-  color:white;
-  height: 5em;
-  width: 20em;
-  /*border: 1px solid white;*/
-  margin: auto;
-  margin-bottom: 5em;
-}
-
-/* Initial menu */
-.menu {
-  background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/black-thread.png') repeat left top;
-  left: -285px;  /* start off behind the scenes */
-  position: fixed;
-  height: 100%;
-  width: 285px;
-  /*border: 1px solid white;*/
-}
-
-/* Basic styling */
-
-.jumbotron {
-  background-image: url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/uber/bg.png'); 
-  height: 100%;
-  -webkit-background-size: cover;
-     -moz-background-size: cover;
-       -o-background-size: cover;
-          background-size: cover;
-}
-
-.menu ul {
-  border-top: 1px solid #636366;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  border-bottom: 1px solid #636366;
-  line-height: 45px;
-  padding-bottom: 3px;
-  padding-left: 20px;
-  padding-top: 3px;
-}
-
-.menu a {
-  color: #fff;
-  font-size: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.icon-close {
-  cursor: pointer;
-  padding-left: 10px;
-  padding-top: 10px;
-  height:1px;
-  width: 1px;
-}
-
-.icon-menu {
-  color: #fff;
-  cursor: pointer;
-  font-family: Lucida Console;
-  font-size: 16px;
-  padding-bottom: 25px;
-  padding-left: 25px;
-  padding-top: 25px;
-  position: fixed;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.icon-menu i {
-  margin-right: 5px;
-}
-.center {
-  width: 60em;
-  text-align: center;
-  /*border: 1px solid white;*/
-  margin: auto;
-  margin-bottom: 8em;
-}
-.menuitem{
-  /*border: 1px solid white;*/
-  margin-bottom: 2em;
-}
-.menuphoto {
-  width: 35em;
-  height: 20em;
-  /*border: 1px solid white;*/
-  margin:auto;
-  margin-bottom: 2em;
-}
-.menuphoto img {
-  width:100%;
-  height: 100%;
-  /*border: 1px solid white;*/
-  margin-bottom: 2em;
-
-}
-.learnmore p{
-  background-color:transparent;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:2px solid white;
-  display:inline-block;
-  cursor:pointer;
-  color:white;
-  font-size:17px;
-  padding:8px 15px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #5b6178;
-  border: 1px solid white;
-  margin-bottom: 2em;
-}
-.learnmore:hover {
-  background-color:transparent;
-}
-.learnmore:active {
-  position:relative;
-  top:1px;
-}
-
-.learnmore div{
-  display: none;
-  background-color:transparent;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:2px solid white;
-  color:white;
-  font-size:17px;
-  padding:8px 15px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #5b6178;
-  margin-bottom: 2em;
-  height: 5em;
-  width: 20em;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 2em;
-
-}
-
-
-
-.itemcounter{
-  margin-bottom: 2em;
-  height: 5em;
-  width: 10em;
-  margin: auto;
-  padding: 0;
-}
-
-.counter{
-  display: inline-block;
-}
-
-#increaseCount1{
-  display: inline-block;
-  margin-left: 1em;
-  padding: 0em 1em 0em 1em;
-  border: 2px solid white;
-  border-radius: 100%;
-
-}
-#increaseCount1:hover{
-  cursor: pointer;
-}
-
-#decreaseCount1{
-  display: inline-block;
-  margin-right: 1em;
-  padding: 0em 1em 0em 1em;
-  border: 2px solid white;
-  border-radius: 100%;
-}
-#decreaseCount1:hover{
-  cursor: pointer;
-}
-
-
-
-#increaseCount2{
-  display: inline-block;
-  margin-left: 1em;
-  padding: 0em 1em 0em 1em;
-  border: 2px solid white;
-  border-radius: 100%;
-
-}
-#increaseCount2:hover{
-  cursor: pointer;
-}
-
-
-
-#decreaseCount2{
-  display: inline-block;
-  margin-right: 1em;
-  padding: 0em 1em 0em 1em;
-  border: 2px solid white;
-  border-radius: 100%;
-}
-#decreaseCount2:hover{
-  cursor: pointer;
-}
-
-
-
-
-#increaseCount3{
-  display: inline-block;
-  margin-left: 1em;
-  padding: 0em 1em 0em 1em;
-  border: 2px solid white;
-  border-radius: 100%;
-
-}
-#increaseCount3:hover{
-  cursor: pointer;
-}
-
-
-
-#decreaseCount3{
-  display: inline-block;
-  margin-right: 1em;
-  padding: 0em 1em 0em 1em;
-  border: 2px solid white;
-  border-radius: 100%;
-}
-#decreaseCount3:hover{
-  cursor: pointer;
-}
-
-
-
-.itemcounter p{
-  font-size: 1em;
-  font-weight: bold;
-}
-
-
-
-
-.bottom{
-  background-color:#44c767;
-  -moz-border-radius:28px;
-  -webkit-border-radius:28px;
-  border-radius:28px;
-  border:1px solid #18ab29;
-  cursor:pointer;
-  color:#ffffff;
-  font-size:13px;
-  text-align: center;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #2f6627;
-  /*border: 1px solid white;*/
-  width: 200px;
-  height: 70px;
-  position: fixed;
-  bottom: 2em;
-  right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-}
-.bottom a{
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  line-height: 65px;
-}
-.bottom:hover {
-  background-color:#5cbf2a;
-}
-
-/*          Log In Page         */
-.container {
-  display: none;
-  position: fixed;
-  top:25%;
-  z-index: 1000;
-  margin: auto;
-  width: 100%;
-  background: rgba(0,0,0,0.7);
-}
-
-
-.login {
-  position: relative;
-  margin: auto;
-  padding: 20px 20px 20px;
-  top:50%;
-  left: 40%;
-  border-radius: 3px;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: -8px; right: -8px; bottom: -8px; left: -8px;
-    z-index: -1;
-    background: rgba(black, .08);
-    border-radius: 4px;
-  }
-
-  h1 {
-    margin: -20px -20px 21px;
-    line-height: 40px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #555;
-    text-align: center;
-    text-shadow: 0 1px white;
-    background: #f3f3f3;
-    border-bottom: 1px solid #cfcfcf;
-    border-radius: 3px 3px 0 0;
-    @include linear-gradient(top, whiteffd, #eef2f5);
-    @include box-shadow(0 1px #f5f5f5);
-  }
-
-  p { margin: 20px 0 0; }
-  p:first-child { margin-top: 0; }
-
-  input[type=text], input[type=password] { width: 278px; }
-
-  p.remember_me {
-    float: left;
-    line-height: 31px;
-    display: inline-block;
-
-    label {
-      font-size: 12px;
-      color: #777;
-      cursor: pointer;
-    }
-
-    input {
-      position: relative;
-      bottom: 1px;
-      margin-right: 4px;
-      vertical-align: middle;
-    }
-  }
-
-  p.submit { 
-    text-align: right; 
-    display: inline-block;
-  }
-}
-
-.login-help {
-  margin: 20px 0;
-  font-size: 11px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px #2a85a1;
-
-  a {
-    color: #cce7fa;
-    text-decoration: none;
-
-    &:hover { text-decoration: underline; }
-  }
-}
-
-:-moz-placeholder {
-  color: #c9c9c9 !important;
-  font-size: 13px;
-}
-
-::-webkit-input-placeholder {
-  color: #ccc;
-  font-size: 13px;
-}
-
-input {
-  font-size: 14px;
-}
-
-input[type=text], input[type=password] {
-  margin: 5px;
-  padding: 0 10px;
-  width: 200px;
-  height: 34px;
-  color: #404040;
-  background: white;
-  border: 1px solid;
-  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
-  border-radius: 2px;
-  outline: 5px solid #eff4f7;
-  -moz-outline-radius: 3px; // Can we get this on WebKit please?
-  @include box-shadow(inset 0 1px 3px rgba(black, .12));
-
-  &:focus {
-    border-color: #7dc9e2;
-    outline-color: #dceefc;
-    outline-offset: 0; // WebKit sets this to -1 by default
-  }
-}
-
-input[type=submit] {
-  padding: 0 18px;
-  height: 29px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #527881;
-  text-shadow: 0 1px #e3f1f1;
-  background: #cde5ef;
-  border: 1px solid;
-  border-color: #b4ccce #b3c0c8 #9eb9c2;
-  border-radius: 16px;
-  outline: 0;
-  @include box-sizing(content-box); // Firefox sets this to border-box by default
-  @include linear-gradient(top, #edf5f8, #cde5ef);
-  @include box-shadow(inset 0 1px white, 0 1px 2px rgba(black, .15));
-
-  &:active {
-    background: #cde5ef;
-    border-color: #9eb9c2 #b3c0c8 #b4ccce;
-    @include box-shadow(inset 0 0 3px rgba(black, .2));
-  }
-}
-
-.lt-ie9 {
-  input[type=text], input[type=password] { line-height: 34px; }
-}
-
-
-
-
-/* Styling for Profile Page */
-
-.profileContainer{
-  position: fixed;
-  top:25%;
-  z-index: 1000;
-  margin: auto;
-  width: 60%;
-  display: none;
-  border: 1px solid white;
-  background: white;
-  right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.profile h1{
-  text-align: center;
-  color: red;
-}
-
-.personalInfo{
-  margin: auto;
-  width: 48em;
-}
-
-.fullName{
-  border: 1px solid white;
-}
-
-.firstName{
-  border: 1px solid white;
-  display: block;
-  float: left;
-  width: 49%;
-}
-.firstName *{
-  border: 1px solid white;
-  clear:both;
-}
-form input[type="text"] {
-    border: none;
-    outline: 0;
-    padding: 0;
-    border-bottom: 1px solid black;
-    height: 1.5em;
-}
-form input[type="password"]{
-  border: none;
-  outline: 0;
-  padding: 0;
-  border-bottom: 1px solid black;
-  height: 1.5em;
-}
-
-form *{
-  font-family: Lucida Console;
-}
-
-.lastName{
-  border: 1px solid white;
-  display: block;
-  float: right;
-  width: 49%;
-}
-
-.lastName label{
-  border: 1px solid white;
-  clear: both;
-}
-
-.address *{
-  display: inline-block;
-}
-
-.email input{
-  width: 100%;
-  border:1px solid white;
-  text-align: center;
-}
-.email label{
-  left: 2%;
-  position: relative;
-}
-
-.password input{
-  width: 100%;
-  text-align: center;
-}
-
-.password label{
-  position: relative;
-  left: 2%;
-}
-
-.phoneNumber input{
-  width: 100%;
-}
-
-.phoneNumber label{
-  position: relative;
-  left: 2%;
-}
-
-.aptNumber input{
-  width: 15%;
-}
-
-.civicNumber input{
-  width: 20%;
-}
-
-
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zeste</title>
+	<link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+	<!-- Importing jQuery from internet -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<!-- Importing jQuery UI from internet-->
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<!-- Importing JS file on CPU-->
+	<script type="text/javascript" src="js/script.js"></script>
+	<!-- Need to figure this shit out-->
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">-->
+</head>
+<body background="img/back.png" style="width:100%">
+	<div class="top">
+		<h1>Logo</h1>
+	</div>
+
+
+	<div class="menuContainer">
+		<div class="icon-close">
+		</div>	
+
+		<ul>
+      	<li id="todayMenu"><p>Today's Menu</p></li>
+        <li id="share"><p>Share with Friends</p></li>
+        <li><p id="profile">Profile</p></li>
+        <li id="notifications"><p>Notifications</p></li>
+        <li id="payment"><p>Payment</p></li>
+        <li id="about"><p>About</p></li>
+        <li id="support"><p>Support</p></li>
+      </ul>
+	</div>
+
+	<div class="homeIcon">
+		<p>Home</p>
+	</div>
+
+    <!-- Each Menu Item is defined here -->  
+	<div class="center">
+		<div class="menuitem">
+			<h2>Menu item #1</h2>
+			<p>10$</p>
+		</div>
+		<div class="menuphoto">
+			<img src="img/meal.png" />
+		</div>
+		<div class="learnmore">
+			<p>Learn more</p>
+			<div> This is where we put the description</div>
+		</div>
+		<div class="itemcounter">
+			<div id="decreaseCount1">
+				<p id="countDown1">-</p>
+			</div>
+			<div class="counter">
+				<p id="count1">0</p>
+			</div>
+
+			<div id="increaseCount1">
+				<p id="countUp1">+</p>
+			</div>
+		</div>
+	</div>
+	<div class="center">
+		<div class="menuitem">
+			<h2>Menu item #2</h2>
+			<p>10$</p>
+		</div>
+		<div class="menuphoto">
+			<img src="img/meal.png" />
+		</div>
+		<div class="learnmore">
+			<p>Learn more</p>
+			<div>This is where we put the description</div>
+		</div>
+		<div class="itemcounter">
+			<div id="decreaseCount2">
+				<p id="countDown2">-</p>
+			</div>
+			<div class="counter">
+				<p id="count2">0</p>
+			</div>
+
+			<div id="increaseCount2">
+				<p id="countUp2">+</p>
+			</div>
+		</div>
+	</div>
+	<div class="center">
+		<div class="menuitem">
+			<h2>Menu item #3</h2>
+			<p>10$</p>
+		</div>
+		<div class="menuphoto">
+			<img src="img/meal.png"/>
+		</div>
+		<div class="learnmore">
+			<p>Learn more</p>
+			<div> This is where we put the description</div>
+		</div>
+		<div class="itemcounter">
+			<div id="decreaseCount3">
+				<p id="countDown3">-</p>
+			</div>
+			<div class="counter">
+				<p id="count3">0</p>
+			</div>
+
+			<div id="increaseCount3">
+				<p id="countUp3">+</p>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<p> Order Now </p>
+	</div>
+
+	<section class="container">
+    <div class="login">
+      <h1>Login</h1>
+      <form method="post" action="index.html">
+        <p><input type="text" name="login" value="" placeholder="Email"></p>
+        <p><input type="password" name="password" value="" placeholder="Password"></p>
+        <p class="remember_me">
+          <label>
+            <input type="checkbox" name="remember_me" id="remember_me">
+            Remember me on this computer
+          </label>
+        </p>
+        <p class="submit"><input type="submit" name="commit" value="Login"></p>
+      </form>
+    </div>
+
+    <div class="login-help">
+      <p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
+    </div>
+  </section>
+
+
+<section class="profileContainer">
+    <div class="profile">
+      <h1>Profile</h1>
+      
+      <form>
+      <div class="personalInfo">
+      	<div class="fullName">
+      		<div class="firstName">
+      			<input type="text" name="firstName" value="">
+      			<label for="firstName">First Name</label>
+      		</div>
+      		<div class="lastName">
+      			<input type="text" name="lastName" value="">
+      			<label for="lastName">Last Name</label>
+      		</div>
+      	</div>
+      	<div class="email">
+      		<input type="text" name="email" value="">
+      		<label for="email">Email</label>
+      	</div>
+      	<div class="password">
+      		<input type="password" name="password" value="">
+      		<label for="password">Password</label>
+      	</div>
+      	<div class="phoneNumber">
+      		<input type="text" name="phoneNumber" value="">
+      		<label for="phoneNumber">Phone #</label>
+      	</div>
+      	<div class="address">
+      		<div class="aptNumber">
+      			<input type="text" name="aptNumber" value="">
+      			<label for="aptNumber">Appartment #</label>
+      		</div>
+      		<div class="civicNumber">
+      			<input type="text" name="civicNumber" value="">
+      			<label for="civicNumber">Street Number</label>
+      		</div>
+      		<div class="street">
+      			<input type="text" name="street" value="">
+      			<label for="street">Street Name</label>
+      		</div>
+      		<div class="postalCode">
+      			<input type="text" name="postalCode" value="">
+      			<label for="postalCode">Postal Code</label>
+      		</div>
+      	</div>
+      </div>
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>
