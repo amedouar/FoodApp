@@ -5,8 +5,7 @@ menuSlide();
 counter();
 learnMore();
 orderNow();
-logIn();
-profileCall();
+
 };
 
 function menuSlide() {
@@ -43,19 +42,19 @@ function menuSlide() {
         $(".menuCalled").hide();
         $(".menuContainer").show();
         $(".homeIcon").show();
-        $(".top").show();
       };
 
-  $('body').click(function() {
+  $('.closeProfile').click(function(){
     $('.profileContainer').hide();
     $('.bottom').show();
+    $('.top').show();
   });
   /*$('.profileContainer').click(function(event)){
     event.stopPropagation();
   };*/
   stopProp('.profileContainer');
 
-    });
+  });
 };
 
 
@@ -116,14 +115,26 @@ function counter() {
 
 
 function learnMore() {
-  $('.learnmore').toggle(
-    function(){
-      $('.learnmore div').hide();
-      $(this).children('div').show();
-    },
-    function(){
-      $(this).children('div').hide();
-    });
+  $('.learnMore').click(function(event){
+    $('.learnMoreDiv').show();
+    $('.top').hide();
+    if($(event.target).is('#learnMore1')){
+    $('#description1').show();
+    };
+    if($(event.target).is('#learnMore2')){
+      $('#description2').show();
+    };
+    if($(event.target).is('#learnMore3')){
+      $('#description3').show();
+    };
+  });
+  $('.learnMoreDiv').click(function(){
+    $('#description1').hide();
+    $('#description2').hide();
+    $('#description3').hide();
+    $('.learnMoreDiv').hide();
+    $('.top').show();
+  });
 };
 
 function orderNow(){
@@ -141,24 +152,6 @@ function orderNow(){
     $('.container').click(function(event){
       event.stopPropagation();
     });
-};
-
-function profileCall(){
-    $('.profiletested').click(function(){
-        $('.profileContainer').show();
-        alert("sa marche");
-      } 
-      /*function(){
-        $('.profileContainer').hide();
-      }*/
-    );
-    $('body').click(function(){
-      $('.profileContainer').hide();
-    });
-    $('.profileContainer').click(function(event){
-      event.stopPropagation();
-    });
-    
 };
 
 function stopProp(a){
