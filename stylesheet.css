@@ -7,25 +7,27 @@ body {
   position: relative;
   height:100%;
   width: 100%;
-
 }
+
+/*body *{
+  border: 1px solid white;
+}*/
 
 h1, h2, h4,p{
   color: white;
 }
 
-body *{
-  border: 1px solid white;
-}
-
+/*Logo*/
 .top {
   text-align: center;
   color:white;
   height: 5em;
   width: 20em;
-  /*border: 1px solid white;*/
   margin: auto;
 }
+
+/*Menu*/
+
 .menuCalled {
   display:none;
   position:absolute;
@@ -41,12 +43,12 @@ body *{
   width:65%;
   height:100%;
   /*border: 1px solid white;*/
-  background-color: #FFFFFF;
+  background-color: rgba(255,255,255,0.7);
   /*border-radius: 10px;*/
 }
 /* Initial menu */
 .menuOutside{
-  background-color: #111111;
+  background-color: rgba(0,0,0,0.7);
   z-index: 800;
   /*border: 2px solid green;*/
   opacity: 50%;
@@ -57,6 +59,7 @@ body *{
   list-style: none;
   margin: 0;
   padding: 0;
+
 }
 
 .menuContainer li {
@@ -71,6 +74,7 @@ body *{
   font-size: 100%;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .icon-close {
@@ -97,80 +101,80 @@ body *{
 .icon-menu i {
   margin-right: 5px;
 }
+/*Centre*/
+  
 .center {
   width: 80%;
   text-align: center;
-  /*border: 1px solid white;*/
   margin: auto;
   margin-bottom: 8em;
 }
 .menuitem{
   /*border: 1px solid white;*/
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 .menuphoto {
   width: 100%;
-  height: 20em;
+  height: 17em;
   /*border: 1px solid white;*/
   margin:auto;
-  margin-bottom: 2em;
+  margin-bottom: 0.5em;
 }
 .menuphoto img {
-  height: 70%;
+  height: 90%;
   /*border: 1px solid white;*/
   margin-bottom: 2em;
 
 }
-.learnmore p{
+.learnMore{
   background-color:transparent;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
-  border-radius:10px;
+  border-radius:5px;
   border:2px solid white;
   display:inline-block;
   cursor:pointer;
   color:white;
-  font-size:17px;
+  font-size:1em;
   padding:8px 15px;
   text-decoration:none;
   text-shadow:0px 1px 0px #5b6178;
   border: 1px solid white;
   margin-bottom: 2em;
 }
-.learnmore:hover {
+.learnMore:hover {
   background-color:transparent;
 }
-.learnmore:active {
+.learnMore:active {
   position:relative;
   top:1px;
 }
 
-.learnmore div{
+.learnMoreDiv{
+  background-color:rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
   display: none;
-  background-color:transparent;
-  -moz-border-radius:10px;
-  -webkit-border-radius:10px;
-  border-radius:10px;
-  border:2px solid white;
-  color:white;
-  font-size:17px;
-  padding:8px 15px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #5b6178;
-  margin-bottom: 2em;
-  height: 5em;
-  width: 20em;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 2em;
-
 }
 
-
+.learnMoreDiv p{
+  position: relative;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+  top:15%;
+  padding: 5%;
+  display: none;
+  background-color:rgba(0,0,0,0.8);
+}
 
 .itemcounter{
-  margin-bottom: 2em;
-  height: 5em;
+  margin-bottom: 0.5em;
+  height: 3.5em;
   width: 10em;
   margin: auto;
   padding: 0;
@@ -188,7 +192,7 @@ body *{
   display: inline-block;
   margin-left: 1em;
   padding: 0em 1em 0em 1em;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   border-radius: 100%;
 
 }
@@ -200,7 +204,7 @@ body *{
   display: inline-block;
   margin-right: 1em;
   padding: 0em 1em 0em 1em;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
   border-radius: 100%;
 }
 #decreaseCount1:hover{
@@ -214,7 +218,6 @@ body *{
   display: inline-block;
   margin-left: 1em;
   padding: 0em 1em 0em 1em;
-  border: 2px solid white;
   border-radius: 100%;
 
 }
@@ -228,7 +231,6 @@ body *{
   display: inline-block;
   margin-right: 1em;
   padding: 0em 1em 0em 1em;
-  border: 2px solid white;
   border-radius: 100%;
 }
 #decreaseCount2:hover{
@@ -242,7 +244,6 @@ body *{
   display: inline-block;
   margin-left: 1em;
   padding: 0em 1em 0em 1em;
-  border: 2px solid white;
   border-radius: 100%;
 
 }
@@ -256,7 +257,6 @@ body *{
   display: inline-block;
   margin-right: 1em;
   padding: 0em 1em 0em 1em;
-  border: 2px solid white;
   border-radius: 100%;
 }
 #decreaseCount3:hover{
@@ -275,31 +275,32 @@ body *{
 
 .bottom{
   background-color:#44c767;
-  -moz-border-radius:28px;
-  -webkit-border-radius:28px;
-  border-radius:28px;
-  border:1px solid #18ab29;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  /*border:1px solid red;*/
   cursor:pointer;
   color:#ffffff;
-  font-size:13px;
   text-align: center;
   text-decoration:none;
   text-shadow:0px 1px 0px #2f6627;
   /*border: 1px solid white;*/
-  width: 200px;
-  height: 70px;
+  width: 15em;
+  height: 3em;
   position: fixed;
-  bottom: 2em;
+  bottom: 3em;
   right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin:auto;
 }
-.bottom a{
+.bottom p{
+  margin-top: -0.05em;
   text-decoration: none;
   color: white;
-  font-size: 20px;
-  line-height: 65px;
+  font-size: 1.5em;
+  line-height: 2em;
 }
 .bottom:hover {
   background-color:#5cbf2a;
@@ -460,45 +461,55 @@ input[type=submit] {
 
 
 /* Styling for Profile Page */
-
 .profileContainer{
-  position: fixed;
-  top:25%;
-  z-index: 1000;
-  margin: auto;
-  width: 60%;
   display: none;
-  border: 1px solid white;
-  background: white;
-  right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.8);
 }
 
-.profile h1{
-  text-align: center;
-  color: red;
+.closeProfile{
+  width: 5%;
+  height: 5%;
+  margin: 1% 0 1% 1%;
+}
+
+.closeProfile img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .personalInfo{
   margin: auto;
-  width: 48em;
+  width: 80%;
+  height: 100%;
+  border:1px solid black;
+  padding: 2em;
+}
+
+.personalInfo label{
+  display: block;
+  position: relative;
 }
 
 .fullName{
-  border: 1px solid white;
+  width: 100%;
+}
+.fullName input{
+  width: 100%;
 }
 
 .firstName{
-  border: 1px solid white;
-  display: block;
-  float: left;
-  width: 49%;
+  display: inline-block;
+  width: 45%;
 }
-.firstName *{
-  border: 1px solid white;
-  clear:both;
+
+.lastName{
+  display: inline-block;
+  width: 45%;
 }
 form input[type="text"] {
     border: none;
@@ -506,6 +517,7 @@ form input[type="text"] {
     padding: 0;
     border-bottom: 1px solid black;
     height: 1.5em;
+    background-color: rgba(255,255,255,0.1);
 }
 form input[type="password"]{
   border: none;
@@ -513,22 +525,11 @@ form input[type="password"]{
   padding: 0;
   border-bottom: 1px solid black;
   height: 1.5em;
+  background-color: rgba(255,255,255,0.1);
 }
 
 form *{
   font-family: "Open Sans",sans-serif Console;
-}
-
-.lastName{
-  border: 1px solid white;
-  display: block;
-  float: right;
-  width: 49%;
-}
-
-.lastName label{
-  border: 1px solid white;
-  clear: both;
 }
 
 .address *{
@@ -536,41 +537,43 @@ form *{
 }
 
 .email input{
-  width: 100%;
-  border:1px solid white;
-  text-align: center;
-}
-.email label{
-  left: 2%;
-  position: relative;
+  width: 50%;
 }
 
 .password input{
-  width: 100%;
-  text-align: center;
-}
-
-.password label{
-  position: relative;
-  left: 2%;
+  width: 30%;
 }
 
 .phoneNumber input{
-  width: 100%;
+  width: 30%;
 }
 
-.phoneNumber label{
-  position: relative;
-  left: 2%;
+.aptNumber{
+  width: 45%;
 }
 
 .aptNumber input{
-  width: 15%;
+  width: 50%;
+}
+
+.civicNumber{
+  width: 45%;
 }
 
 .civicNumber input{
-  width: 20%;
+  width: 50%;
 }
 
+.street{
+  width: 45%;
+}
+.street input{
+  width: 100%;
+}
 
-
+.postalCode{
+  width: 45%;
+}
+.postalCode input{
+  width: 50%;
+}
