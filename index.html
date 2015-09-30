@@ -3,6 +3,7 @@
 <head>
 	<title>Zeste</title>
 	<link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+	<link type="text/css" rel="stylesheet" href="css/jquery.pagepiling.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
 	<!-- Importing jQuery from internet -->
@@ -10,7 +11,25 @@
 	<!-- Importing jQuery UI from internet-->
 	<script src="js/jquery-ui.js"></script>
 	<!-- Importing JS file on CPU-->
+	<script src="js/jquery.pagepiling.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		var deleteLog = false;
+		$(document).ready(function() {
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3'],
+	    		easing: 'easeInOutCubic',
+	    		scrollingSpeed: 100,
+	    		navigation: {
+		            'textColor': '#f2f2f2',
+		            'bulletsColor': '#ccc',
+		            'position': 'right',
+		            'tooltips': ['Page 1', 'Page 2', 'Page 3',]
+		        }
+			});
+	    });
+    </script>
 	<!-- Need to figure this shit out-->
   </script>
 	<meta charset="UTF-8">
@@ -20,10 +39,13 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
 </head>
 <body background="img/back.png" style="background-size:contain">
-	<div class="top">
-		<h1>Logo</h1>
-	</div>
-
+	<!--<div>
+	<ul id="myMenu">
+    <li data-menuanchor="page1" class="active"><a href="#page1">Page 1</a></li>
+    <li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
+    <li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
+	</ul>
+	</div>-->
 	<section class="profileContainer">
     <div class="profile">
     	<div class="closeProfile">
@@ -85,10 +107,11 @@
 	<div class="menuCalled">
 	<div class="menuContainer">
 		<div class="icon-close">
-		</div>	
+    		<img src="img/close.png" />
+    	</div>
 
 		<ul>
-      	<li id="todayMenu"><p>Today's Menu</p></li>
+      	<li id="todayMenu"><p id="todayMenu">Today's Menu</p></li>
         <li id="share"><p>Share with Friends</p></li>
         <li><p id="profile">Profile</p></li>
         <li id="notifications"><p>Notifications</p></li>
@@ -103,6 +126,36 @@
 		<p>Home</p>
 	</div>
 
+	<section class="container">
+    <div class="login">
+    	<div id="closeLogin">
+    		<img src="img/close.png" />
+    	</div>
+      <h1>Login</h1>
+      <form method="post" action="index.html" class="formDiv">
+        <p><input type="text" name="login" value=""  autocapitalize="words"></p>
+        <label>email</label>
+        <p><input type="password" name="password" value="" ></p>
+        <label>password</label>
+        <div class="submit"><p>Login</p></div>
+      </form>
+
+    <div class="signUpHere">
+       <a>New? Sign up here</a>
+    </div>
+      
+    <div class="login-help">
+       <a>Forgot password?</a>
+    </div>
+    </div>
+ 	</section>
+
+<div id="pagepiling">
+	<div id="page1" class="section">
+
+	<div class="top">
+		<h1>Logo</h1>
+	</div>
     <!-- Each Menu Item is defined here -->  
 	<div class="center">
 		<div class="menuitem">
@@ -117,18 +170,19 @@
 				Learn more
 			</div>
 		</div>
-		<div class="itemcounter">
-			<div id="decreaseCount1">
-				<p id="countDown1">-</p>
-			</div>
+		<div id="itemcounter1">
+			<div class="decreaseCount">-</div>
 			<div class="counter">
-				<p id="count1">0</p>
+				<p class="count">0</p>
 			</div>
 
-			<div id="increaseCount1">
-				<p id="countUp1">+</p>
-			</div>
+			<div class="increaseCount">+</div>
 		</div>
+	</div>
+	</div>
+	<div id="page2" class="section">
+	<div class="top">
+		<h1>Logo</h1>
 	</div>
 	<div class="center">
 		<div class="menuitem">
@@ -143,18 +197,18 @@
 				Learn more
 			</div>
 		</div>
-		<div class="itemcounter">
-			<div id="decreaseCount2">
-				<p id="countDown2">-</p>
-			</div>
+		<div id="itemcounter2">
+			<div class="decreaseCount">-</div>
 			<div class="counter">
-				<p id="count2">0</p>
+				<p class="count">0</p>
 			</div>
-
-			<div id="increaseCount2">
-				<p id="countUp2">+</p>
-			</div>
+			<div class="increaseCount">+</div>
 		</div>
+	</div>
+	</div>
+	<div id="page3" class="section">
+	<div class="top">
+		<h1>Logo</h1>
 	</div>
 	<div class="center">
 		<div class="menuitem">
@@ -169,45 +223,19 @@
 				Learn more
 			</div>
 		</div>
-		<div class="itemcounter">
-			<div id="decreaseCount3">
-				<p id="countDown3">-</p>
-			</div>
+		<div id="itemcounter3">
+			<div class="decreaseCount">-</div>
 			<div class="counter">
-				<p id="count3">0</p>
+				<p class="count">0</p>
 			</div>
-
-			<div id="increaseCount3">
-				<p id="countUp3">+</p>
-			</div>
+			<div class="increaseCount">+</div>
 		</div>
 	</div>
-
+	</div>
+</div>
 	<div class="bottom">
 		<p> Order Now </p>
 	</div>
-
-	<section class="container">
-    <div class="login">
-      <h1>Login</h1>
-      <form method="post" action="index.html">
-        <p><input type="text" name="login" value="" placeholder="Email" autocapitalize="words"></p>
-        <p><input type="password" name="password" value="" placeholder="Password"></p>
-        <p class="remember_me">
-          <label>
-            <input type="checkbox" name="remember_me" id="remember_me">
-            Remember me on this computer
-          </label>
-        </p>
-        <p class="submit"><input type="submit" name="commit" value="Login"></p>
-      </form>
-    </div>
-
-    <div class="login-help">
-      <p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
-    </div>
-  </section>
-
 
 <section class="profileContainer">
     <div class="profile">
