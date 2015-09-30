@@ -13,7 +13,7 @@ body {
   border: 1px solid white;
 }*/
 
-h1, h2, h4,p{
+h2, h4,p{
   color: white;
 }
 
@@ -21,13 +21,18 @@ h1, h2, h4,p{
 .top {
   text-align: center;
   color:white;
-  height: 5em;
+  height: 10%;
   width: 20em;
   margin: auto;
 }
 
-/*Menu*/
+.section{
+  height: 100vh;
+}
 
+
+
+/*Menu*/
 .menuCalled {
   display:none;
   position:absolute;
@@ -36,6 +41,7 @@ h1, h2, h4,p{
   width:100%;
   /*border:1px solid red;*/
 }
+
 .menuContainer {
   position: fixed;
   display:none;
@@ -78,11 +84,15 @@ h1, h2, h4,p{
 }
 
 .icon-close {
+  float: right;
   cursor: pointer;
-  padding-left: 10px;
-  padding-top: 10px;
-  height:1px;
-  width: 1px;
+  height:1em;
+  width: 1em;
+}
+
+.icon-close img{
+  height: 100%;
+  width: 100%;
 }
 
 .homeIcon {
@@ -105,29 +115,31 @@ h1, h2, h4,p{
   
 .center {
   width: 80%;
+  height: 90%;
   text-align: center;
   margin: auto;
-  margin-bottom: 8em;
-}
-.menuitem{
-  /*border: 1px solid white;*/
-  margin-top: 1em;
-  margin-bottom: 0.5em;
-}
-.menuphoto {
-  width: 100%;
-  height: 17em;
-  /*border: 1px solid white;*/
-  margin:auto;
-  margin-bottom: 0.5em;
-}
-.menuphoto img {
-  height: 90%;
-  /*border: 1px solid white;*/
-  margin-bottom: 2em;
 
 }
-.learnMore{
+.menuitem{
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  height: 15%;
+}
+
+.menuphoto {
+  width: 100%;
+  height: 50%;
+  margin:auto;
+  margin-bottom: 0.5em;
+  border: 1px solid green;
+}
+.menuphoto img {
+  height: 80%;
+  margin-bottom: 2em;
+  border: 1px solid red;
+
+}
+.learnMore *{
   background-color:transparent;
   -moz-border-radius:10px;
   -webkit-border-radius:10px;
@@ -141,12 +153,11 @@ h1, h2, h4,p{
   text-decoration:none;
   text-shadow:0px 1px 0px #5b6178;
   border: 1px solid white;
-  margin-bottom: 2em;
 }
-.learnMore:hover {
+.learnMore *:hover {
   background-color:transparent;
 }
-.learnMore:active {
+.learnMore *:active {
   position:relative;
   top:1px;
 }
@@ -172,106 +183,46 @@ h1, h2, h4,p{
   background-color:rgba(0,0,0,0.8);
 }
 
-.itemcounter{
-  margin-bottom: 0.5em;
-  height: 3.5em;
-  width: 10em;
-  margin: auto;
-  padding: 0;
-}
-.itemcounter:active{
-  position: relative;
-  top:1px;
-}
-
 .counter{
   display: inline-block;
+  height: 10%;
 }
 
-#increaseCount1{
+.increaseCount{
   display: inline-block;
   margin-left: 1em;
   padding: 0em 1em 0em 1em;
   /*border: 2px solid white;*/
   border-radius: 100%;
-
-}
-#increaseCount1:hover{
-  cursor: pointer;
-}
-
-#decreaseCount1{
-  display: inline-block;
-  margin-right: 1em;
-  padding: 0em 1em 0em 1em;
-  /*border: 2px solid white;*/
-  border-radius: 100%;
-}
-#decreaseCount1:hover{
-  cursor: pointer;
-}
-
-
-
-
-#increaseCount2{
-  display: inline-block;
-  margin-left: 1em;
-  padding: 0em 1em 0em 1em;
-  border-radius: 100%;
-
-}
-#increaseCount2:hover{
-  cursor: pointer;
-}
-
-
-
-#decreaseCount2{
-  display: inline-block;
-  margin-right: 1em;
-  padding: 0em 1em 0em 1em;
-  border-radius: 100%;
-}
-#decreaseCount2:hover{
-  cursor: pointer;
-}
-
-
-
-
-#increaseCount3{
-  display: inline-block;
-  margin-left: 1em;
-  padding: 0em 1em 0em 1em;
-  border-radius: 100%;
-
-}
-#increaseCount3:hover{
-  cursor: pointer;
-}
-
-
-
-#decreaseCount3{
-  display: inline-block;
-  margin-right: 1em;
-  padding: 0em 1em 0em 1em;
-  border-radius: 100%;
-}
-#decreaseCount3:hover{
-  cursor: pointer;
-}
-
-
-
-.itemcounter p{
-  font-size: 1em;
+  color: white;
   font-weight: bold;
+
+}
+.increaseCount:hover{
+  cursor: pointer;
 }
 
+.increaseCount:active{
+  position: relative;
+  top:0.2em;
+}
 
+.decreaseCount{
+  display: inline-block;
+  margin-right: 1em;
+  padding: 0em 1em 0em 1em;
+  /*border: 2px solid white;*/
+  border-radius: 100%;
+  color: white;
+}
+.decreaseCount:hover{
+  cursor: pointer;
+}
 
+.decreaseCount:active{
+  position: relative;
+  top:0.2em;
+}
 
 .bottom{
   background-color:#44c767;
@@ -288,7 +239,7 @@ h1, h2, h4,p{
   width: 15em;
   height: 3em;
   position: fixed;
-  bottom: 3em;
+  bottom: 0;
   right: 0;
   left: 0;
   margin-right: auto;
@@ -307,158 +258,158 @@ h1, h2, h4,p{
 }
 
 /*          Log In Page         */
+
 .container {
   display: none;
   position: fixed;
-  top:25%;
   z-index: 1000;
-  margin: auto;
   width: 100%;
-  background: rgba(0,0,0,0.7);
+  background: rgba(255,255,255,0.8);
+  height:100%;
+  /*border:2px solid red;*/
 }
-
 
 .login {
   position: relative;
+  /*border:2px solid green;*/
   margin: auto;
-  padding: 20px 20px 20px;
-  top:50%;
-  left: 40%;
+  /*padding: 4.1em;*/
+  top:0%;
   border-radius: 3px;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: -8px; right: -8px; bottom: -8px; left: -8px;
-    z-index: -1;
-    background: rgba(black, .08);
-    border-radius: 4px;
-  }
-
-  h1 {
-    margin: -20px -20px 21px;
-    line-height: 40px;
-    font-size: 15px;
-    font-weight: bold;
-    color: #555;
+ 
+}
+.formDiv{
+  margin-top: 1.5em;
+  position: relative;
+  /*border:1px solid yellow;*/
+  margin: auto;
+  /*padding: 4.1em;*/
+  width:80%;
+  border-radius: 3px;
+  top: 0em;
+}
+.formDiv label {
+  color: #4a4a4a;
+  display: block;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  min-height: 2em;
+  overflow: hidden;
+  position: relative;
+  text-transform: lowercase;
+  width: 100%;
+}
+.login  h1 {
+    margin-top: 1em;
+    line-height: 1em;
+    font-size: 2.275em;
+    text-transform: uppercase;
+    color: #4a4a4a;
     text-align: center;
-    text-shadow: 0 1px white;
-    background: #f3f3f3;
-    border-bottom: 1px solid #cfcfcf;
-    border-radius: 3px 3px 0 0;
-    @include linear-gradient(top, whiteffd, #eef2f5);
-    @include box-shadow(0 1px #f5f5f5);
+    /*border:2px solid black;*/
+    letter-spacing: 2px;
   }
 
-  p { margin: 20px 0 0; }
-  p:first-child { margin-top: 0; }
-
-  input[type=text], input[type=password] { width: 278px; }
-
-  p.remember_me {
-    float: left;
-    line-height: 31px;
-    display: block;
-
-    label {
-      font-size: 12px;
-      color: #777;
-      cursor: pointer;
-    }
-
-    input {
-      position: relative;
-      bottom: 1px;
-      margin-right: 4px;
-      vertical-align: middle;
-    }
-  }
-
-  p.submit { 
-    text-align: right; 
-    display: inline-block;
-  }
+  
+.submit {
+  background-color:#44c767;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  /*border:1px solid red;*/
+  cursor:pointer;
+  color:#ffffff;
+  text-align: center;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2f6627;
+  /*border: 1px solid white;*/
+  width: 15em;
+  height: 3em;
+  position: relative;
+  bottom: 0em;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin:auto;
+  margin-top: 2.5em;
+}
+.submit p{
+  margin-top: -0.05em;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  line-height: 2em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .login-help {
-  margin: 20px 0;
-  font-size: 11px;
+  /*border:1px solid blue;*/
+  margin: 0;
+  font-size: 1em;
   color: white;
   text-align: center;
   text-shadow: 0 1px #2a85a1;
-
-  a {
-    color: #cce7fa;
-    text-decoration: none;
-
-    &:hover { text-decoration: underline; }
-  }
+  margin-top: 0.5em;
 }
 
-:-moz-placeholder {
-  color: #c9c9c9 !important;
-  font-size: 13px;
+.login-help a {
+    border: none;
+    color: #6ba539;
+    font-family: "Eudald News",serif;
+    font-size: 1.2em;
+    margin: 0;
+    text-decoration: underline;
+}
+.signUpHere {
+ /* border:1px solid blue;*/
+  margin: 0;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px #2a85a1;
+  margin-top: 1.5em;
 }
 
-::-webkit-input-placeholder {
-  color: #ccc;
-  font-size: 13px;
+.signUpHere:hover{
+  cursor: pointer;
+}
+
+.signUpHere a {
+    border: none;
+    color: #6ba539;
+    font-family: "Eudald News",serif;
+    font-size: 1.2em;
+    margin: 0;
+    text-decoration: underline;
+}
+#closeLogin{
+  width: 5%;
+  height: 5%;
+  margin: 1% 0 1% 95%;
+}
+
+#closeLogin img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 input {
-  font-size: 14px;
+  font-size: 2em;
 }
 
 input[type=text], input[type=password] {
-  margin: 5px;
-  padding: 0 10px;
-  width: 200px;
-  height: 34px;
-  color: #404040;
-  background: white;
-  border: 1px solid;
-  border-color: #c4c4c4 #d1d1d1 #d4d4d4;
-  border-radius: 2px;
-  outline: 5px solid #eff4f7;
-  -moz-outline-radius: 3px; // Can we get this on WebKit please?
-  @include box-shadow(inset 0 1px 3px rgba(black, .12));
-
-  &:focus {
-    border-color: #7dc9e2;
-    outline-color: #dceefc;
-    outline-offset: 0; // WebKit sets this to -1 by default
-  }
+  border: none;
+    color: #4a4a4a;
+    font-family: "Eudald News",serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin-top: .5em;
+    width: 100%;
 }
-
-input[type=submit] {
-  padding: 0 18px;
-  height: 29px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #527881;
-  text-shadow: 0 1px #e3f1f1;
-  background: #cde5ef;
-  border: 1px solid;
-  border-color: #b4ccce #b3c0c8 #9eb9c2;
-  border-radius: 16px;
-  outline: 0;
-  @include box-sizing(content-box); // Firefox sets this to border-box by default
-  @include linear-gradient(top, #edf5f8, #cde5ef);
-  @include box-shadow(inset 0 1px white, 0 1px 2px rgba(black, .15));
-
-  &:active {
-    background: #cde5ef;
-    border-color: #9eb9c2 #b3c0c8 #b4ccce;
-    @include box-shadow(inset 0 0 3px rgba(black, .2));
-  }
-}
-
-.lt-ie9 {
-  input[type=text], input[type=password] { line-height: 34px; }
-}
-
-
-
 
 /* Styling for Profile Page */
 .profileContainer{
@@ -473,7 +424,7 @@ input[type=submit] {
 .closeProfile{
   width: 5%;
   height: 5%;
-  margin: 1% 0 1% 1%;
+  float: right;
 }
 
 .closeProfile img{
@@ -486,7 +437,6 @@ input[type=submit] {
   margin: auto;
   width: 80%;
   height: 100%;
-  border:1px solid black;
   padding: 2em;
 }
 
