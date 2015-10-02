@@ -128,15 +128,15 @@ h2, h4,p{
 
 .menuphoto {
   width: 100%;
-  height: 50%;
+  height: 45%;
   margin:auto;
   margin-bottom: 0.5em;
-  border: 1px solid green;
+ /*border: 1px solid green;*/
 }
 .menuphoto img {
   height: 80%;
   margin-bottom: 2em;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 
 }
 .learnMore *{
@@ -224,7 +224,7 @@ h2, h4,p{
   top:0.2em;
 }
 
-.bottom{
+.orderNow{
   background-color:#44c767;
   -moz-border-radius:5px;
   -webkit-border-radius:5px;
@@ -239,39 +239,37 @@ h2, h4,p{
   width: 15em;
   height: 3em;
   position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
+  bottom: 1em;
+  right: 60%;
+  left: 40%;
   margin:auto;
 }
-.bottom p{
+.orderNow p{
   margin-top: -0.05em;
   text-decoration: none;
   color: white;
   font-size: 1.5em;
   line-height: 2em;
 }
-.bottom:hover {
+.orderNow:hover {
   background-color:#5cbf2a;
 }
 
 /*          Log In Page         */
 
-.container {
+.containerLogin {
   display: none;
   position: fixed;
   z-index: 1000;
   width: 100%;
-  background: rgba(255,255,255,0.8);
+  background: white;
   height:100%;
   /*border:2px solid red;*/
 }
 
 .login {
   position: relative;
-  /*border:2px solid green;*/
+  border:2px solid green;
   margin: auto;
   /*padding: 4.1em;*/
   top:0%;
@@ -384,17 +382,6 @@ h2, h4,p{
     font-size: 1.2em;
     margin: 0;
     text-decoration: underline;
-}
-#closeLogin{
-  width: 5%;
-  height: 5%;
-  margin: 1% 0 1% 95%;
-}
-
-#closeLogin img{
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
 }
 
 input {
@@ -527,3 +514,90 @@ form *{
 .postalCode input{
   width: 50%;
 }
+
+/*          Social Media Page       */
+.containerShare{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(255,255,255,0.7);
+  height:100%;
+  text-align: center;
+}
+
+#closeShare{
+  width: 3em;
+  height: 3em;
+  float: right;
+  margin: 1% 1% 0 0;
+}
+
+#closeShare img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/*        Payment Page        */
+.containerPayment{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(255,255,255,0.7);
+  height:100%;
+  text-align: center;
+}
+
+/*        Payment Page        */
+.containerNotifications{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(255,255,255,0.7);
+  height:100%;
+}
+
+.notifications{
+  width: 50%;
+  margin: auto;
+  border: 1px solid red;
+  height: 50%;
+
+}
+
+.notification{
+  display: block;
+}
+
+/*        About Page        */
+.containerAbout{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(255,255,255,0.7);
+  height:100%;
+}
+
+/*      Defining Styling for every pop up     */
+.popUpTop{
+  border: 1px solid red;
+  text-align: center;
+}
+
+.popUpTop div{
+  width: 2em;
+  height: 2em;
+  float: right;
+  margin: 1em 1em 0 0;
+}
+
+.popUpTop img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
