@@ -17,7 +17,7 @@ function menuSlide() {
     function() {
       $(".menuCalled").show();
       $(".menuContainer").show();
-      $('.bottom').hide();
+      $('.orderNow').hide();
       $(".top").hide();
       $(".homeIcon").hide();
       $('body').fade();
@@ -27,7 +27,7 @@ function menuSlide() {
   $('.menuOutside').click(function() {
     $(".menuCalled").hide();
     $(".menuContainer").show();
-    $('.bottom').show();
+    $('.orderNow').show();
     $(".top").show();
     $(".homeIcon").show();
   });
@@ -41,17 +41,66 @@ function menuSlide() {
       };
        if($(event.target).is('#todayMenu')){
         $('.menuCalled').hide();
-        $('.bottom').show();
+        $('.orderNow').show();
         $('.top').show();
         $(".homeIcon").show();
       };
+      if($(event.target).is('#share')){
+        $('.containerShare').show();
+        $(".menuCalled").hide();
+        $(".menuContainer").show();
+        $(".homeIcon").show();
+      };
+      if($(event.target).is('#payment')){
+        $('.containerPayment').show();
+        $(".menuCalled").hide();
+        $(".menuContainer").show();
+        $(".homeIcon").show();
+      };
+      if($(event.target).is('#notifications')){
+        $('.containerNotifications').show();
+        $(".menuCalled").hide();
+        $(".menuContainer").show();
+        $(".homeIcon").show();
+      };
+      if($(event.target).is('#about')){
+        $('.containerAbout').show();
+        $(".menuCalled").hide();
+        $(".menuContainer").show();
+        $(".homeIcon").show();
+      };
 
-  $('.closeProfile').click(function(){
+  $('#closeProfile').click(function(){
     $('.profileContainer').hide();
-    $('.bottom').show();
+    $('.orderNow').show();
     $('.top').show();
   });
-
+  $('.icon-close').click(function(){
+    $('.menuCalled').hide();
+    $('.orderNow').show();
+    $('.top').show();
+    $(".homeIcon").show();
+  });
+  $('#closeShare').click(function(){
+    $('.containerShare').hide();
+    $('.orderNow').show();
+    $('.top').show();
+  });
+  $('#closePayment').click(function(){
+    $('.containerPayment').hide();
+    $('.orderNow').show();
+    $('.top').show();
+  });
+  $('#closeNotifications').click(function(){
+    $('.containerNotifications').hide();
+    $('.orderNow').show();
+    $('.top').show();
+  });
+  $('#closeAbout').click(function(){
+    $('.containerAbout').hide();
+    $('.orderNow').show();
+    $('.top').show();
+  });
   /*$('.profileContainer').click(function(event)){
     event.stopPropagation();
   };*/
@@ -105,20 +154,25 @@ function learnMore() {
 };
 
 function orderNow(){
-    $('.bottom').click(function(){
-      $('.container').show();
-      $('.bottom').hide();
+    $('.orderNow').click(function(){
+      $('.containerLogin').show();
+      $('.orderNow').hide();
     });
 
     $('#closeLogin').click(function(){
-      $('.container').hide();
-      $('.bottom').show();
+      $('.containerLogin').hide();
+      $('.orderNow').show();
     });
     
     $('.signUpHere').click(function(){
-      $('.container').hide();
+      $('.containerLogin').hide();
       $('.profileContainer').show();
     });
+      $('#closeProfile').click(function(){
+    $('.profileContainer').hide();
+    $('.orderNow').show();
+    $('.top').show();
+  });
 };
 
 function stopProp(a){
