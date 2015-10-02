@@ -1,137 +1,150 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Zeste</title>
-	<link type="text/css" rel="stylesheet" href="css/stylesheet.css">
-	<link type="text/css" rel="stylesheet" href="css/jquery.pagepiling.css">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
-	<!-- Importing jQuery from internet -->
-	<script src="js/jquery.min.js"></script>
-	<!-- Importing jQuery UI from internet-->
-	<script src="js/jquery-ui.js"></script>
-	<!-- Importing JS file on CPU-->
-	<script src="js/jquery.pagepiling.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript">
-		var deleteLog = false;
-		$(document).ready(function() {
-	    	$('#pagepiling').pagepiling({
-	    		menu: '#menu',
-	    		anchors: ['page1', 'page2', 'page3'],
-	    		easing: 'easeInOutCubic',
-	    		scrollingSpeed: 100,
-	    		navigation: {
-		            'textColor': '#f2f2f2',
-		            'bulletsColor': '#ccc',
-		            'position': 'right',
-		            'tooltips': ['Page 1', 'Page 2', 'Page 3',]
-		        }
-			});
-	    });
-    </script>
-	<!-- Need to figure this shit out-->
+  <title>Zeste</title>
+  <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+  <link type="text/css" rel="stylesheet" href="css/jquery.pagepiling.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+  <!-- Importing jQuery from internet -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Importing jQuery UI from internet-->
+  <script src="js/jquery-ui.js"></script>
+  <!-- Importing JS file on CPU-->
+  <script src="js/jquery.pagepiling.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript">
+    var deleteLog = false;
+    $(document).ready(function() {
+        $('#pagepiling').pagepiling({
+          menu: '#menu',
+          anchors: ['page1', 'page2', 'page3'],
+          easing: 'easeInOutCubic',
+          scrollingSpeed: 100,
+          navigation: {
+                'textColor': '#f2f2f2',
+                'bulletsColor': '#ccc',
+                'position': 'right',
+                'tooltips': ['Page 1', 'Page 2', 'Page 3',]
+            }
+      });
+      });
   </script>
-	<meta charset="UTF-8">
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
 </head>
 <body background="img/back.png" style="background-size:contain">
-	<!--<div>
-	<ul id="myMenu">
-    <li data-menuanchor="page1" class="active"><a href="#page1">Page 1</a></li>
-    <li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
-    <li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
-	</ul>
-	</div>-->
-	<section class="profileContainer">
+
+
+
+<!--              Defining Pop Up for Profile Page          -->
+  <section class="profileContainer">
+    <div class="popUpTop">
+      <div id="closeProfile">
+        <img src="img/close.png" />
+      </div>
+      <h1>Login</h1>
+    </div>
+
     <div class="profile">
-    	<div class="closeProfile">
-    		<img src="img/close.png" />
-    	</div>
-      
       <form>
       <div class="personalInfo">
-      	<div class="fullName">
-      		<div class="firstName">
-      			<input type="text" name="firstName" value="">
-      			<label for="firstName">First Name</label>
-      		</div>
-      		<div class="lastName">
-      			<input type="text" name="lastName" value="">
-      			<label for="lastName">Last Name</label>
-      		</div>
-      	</div>
-      	<div class="email">
-      		<input type="text" name="email" value="">
-      		<label for="email">Email</label>
-      	</div>
-      	<div class="password">
-      		<input type="password" name="password" value="">
-      		<label for="password">Password</label>
-      	</div>
-      	<div class="phoneNumber">
-      		<input type="text" name="phoneNumber" value="">
-      		<label for="phoneNumber">Phone #</label>
-      	</div>
-      	<div class="address">
-      		<div class="aptNumber">
-      			<input type="text" name="aptNumber" value="">
-      			<label for="aptNumber">Appartment #</label>
-      		</div>
-      		<div class="civicNumber">
-      			<input type="text" name="civicNumber" value="">
-      			<label for="civicNumber">Street Number</label>
-      		</div>
-      		<div class="street">
-      			<input type="text" name="street" value="">
-      			<label for="street">Street Name</label>
-      		</div>
-      		<div class="postalCode">
-      			<input type="text" name="postalCode" value="">
-      			<label for="postalCode">Postal Code</label>
-      		</div>
-      	</div>
+        <div class="fullName">
+          <div class="firstName">
+            <input type="text" name="firstName" value="">
+            <label for="firstName">First Name</label>
+          </div>
+          <div class="lastName">
+            <input type="text" name="lastName" value="">
+            <label for="lastName">Last Name</label>
+          </div>
+        </div>
+        <div class="email">
+          <input type="text" name="email" value="">
+          <label for="email">Email</label>
+        </div>
+        <div class="password">
+          <input type="password" name="password" value="">
+          <label for="password">Password</label>
+        </div>
+        <div class="phoneNumber">
+          <input type="text" name="phoneNumber" value="">
+          <label for="phoneNumber">Phone #</label>
+        </div>
+        <div class="address">
+          <div class="aptNumber">
+            <input type="text" name="aptNumber" value="">
+            <label for="aptNumber">Appartment #</label>
+          </div>
+          <div class="civicNumber">
+            <input type="text" name="civicNumber" value="">
+            <label for="civicNumber">Street Number</label>
+          </div>
+          <div class="street">
+            <input type="text" name="street" value="">
+            <label for="street">Street Name</label>
+          </div>
+          <div class="postalCode">
+            <input type="text" name="postalCode" value="">
+            <label for="postalCode">Postal Code</label>
+          </div>
+        </div>
       </div>
       </form>
     </div>
   </section>
-	<div class="learnMoreDiv"> 
-		<p id="description1">This is where we put the description 1</p>
-		<p id="description2">This is where we put the description 2</p>
-		<p id="description3">This is where we put the description 3</p>
-	</div>
-	
-	<div class="menuCalled">
-	<div class="menuContainer">
-		<div class="icon-close">
-    		<img src="img/close.png" />
-    	</div>
 
-		<ul>
-      	<li id="todayMenu"><p id="todayMenu">Today's Menu</p></li>
-        <li id="share"><p>Share with Friends</p></li>
+
+
+<!--              Defining Pop Up to Put Info About Each Menu Item         -->
+  <div class="learnMoreDiv"> 
+    <p id="description1">This is where we put the description 1</p>
+    <p id="description2">This is where we put the description 2</p>
+    <p id="description3">This is where we put the description 3</p>
+  </div>
+
+
+
+  
+<!--              Defining Half Page Pop Up for Menu          -->
+  <section class="menuCalled">
+  <div class="menuContainer">
+    <div class="icon-close">
+        <img src="img/close.png" />
+      </div>
+
+    <ul>
+        <li><p id="todayMenu">Today's Menu</p></li>
+        <li><p id="share">Share with Friends</p></li>
         <li><p id="profile">Profile</p></li>
-        <li id="notifications"><p>Notifications</p></li>
-        <li id="payment"><p>Payment</p></li>
-        <li id="about"><p>About</p></li>
-        <li id="support"><p>Support</p></li>
+        <li><p id="notifications">Notifications</p></li>
+        <li><p id="payment">Payment</p></li>
+        <li><p id="about">About</p></li>
       </ul>
-	</div>
-	<div class="menuOutside"></div>
-	</div>
-	<div class="homeIcon">
-		<p>Home</p>
-	</div>
+  </div>
+  <div class="menuOutside">
+  </div>
+  </section>
+  <div class="homeIcon">
+    <p>Home</p>
+  </div>
 
-	<section class="container">
-    <div class="login">
-    	<div id="closeLogin">
-    		<img src="img/close.png" />
-    	</div>
+
+
+
+<!--              Defining Pop Up for Log In Page          -->
+  <section class="containerLogin">
+    <div class="popUpTop">
+      <div id="closeLogin">
+        <img src="img/close.png" />
+      </div>
       <h1>Login</h1>
+    </div>
+
+    <div class="login">
       <form method="post" action="index.html" class="formDiv">
         <p><input type="text" name="login" value=""  autocapitalize="words"></p>
         <label>email</label>
@@ -148,145 +161,186 @@
        <a>Forgot password?</a>
     </div>
     </div>
- 	</section>
+  </section>
 
-<div id="pagepiling">
-	<div id="page1" class="section">
 
-	<div class="top">
-		<h1>Logo</h1>
-	</div>
-    <!-- Each Menu Item is defined here -->  
-	<div class="center">
-		<div class="menuitem">
-			<h2>Menu item #1</h2>
-			<p>10$</p>
-		</div>
-		<div class="menuphoto">
-			<img src="img/meal.png" />
-		</div>
-		<div class="learnMore">
-			<div id="learnMore1">
-				Learn more
-			</div>
-		</div>
-		<div id="itemcounter1">
-			<div class="decreaseCount">-</div>
-			<div class="counter">
-				<p class="count">0</p>
-			</div>
 
-			<div class="increaseCount">+</div>
-		</div>
-	</div>
-	</div>
-	<div id="page2" class="section">
-	<div class="top">
-		<h1>Logo</h1>
-	</div>
-	<div class="center">
-		<div class="menuitem">
-			<h2>Menu item #2</h2>
-			<p>10$</p>
-		</div>
-		<div class="menuphoto">
-			<img src="img/meal.png" />
-		</div>
-		<div class="learnMore">
-			<div id="learnMore2">
-				Learn more
-			</div>
-		</div>
-		<div id="itemcounter2">
-			<div class="decreaseCount">-</div>
-			<div class="counter">
-				<p class="count">0</p>
-			</div>
-			<div class="increaseCount">+</div>
-		</div>
-	</div>
-	</div>
-	<div id="page3" class="section">
-	<div class="top">
-		<h1>Logo</h1>
-	</div>
-	<div class="center">
-		<div class="menuitem">
-			<h2>Menu item #3</h2>
-			<p>10$</p>
-		</div>
-		<div class="menuphoto">
-			<img src="img/meal.png"/>
-		</div>
-		<div class="learnMore">
-			<div id="learnMore3">
-				Learn more
-			</div>
-		</div>
-		<div id="itemcounter3">
-			<div class="decreaseCount">-</div>
-			<div class="counter">
-				<p class="count">0</p>
-			</div>
-			<div class="increaseCount">+</div>
-		</div>
-	</div>
-	</div>
-</div>
-	<div class="bottom">
-		<p> Order Now </p>
-	</div>
-
-<section class="profileContainer">
-    <div class="profile">
-      <h1>Profile</h1>
-      
-      <form>
-      <div class="personalInfo">
-      	<div class="fullName">
-      		<div class="firstName">
-      			<input type="text" name="firstName" value="">
-      			<label for="firstName">First Name</label>
-      		</div>
-      		<div class="lastName">
-      			<input type="text" name="lastName" value="">
-      			<label for="lastName">Last Name</label>
-      		</div>
-      	</div>
-      	<div class="email">
-      		<input type="text" name="email" value="">
-      		<label for="email">Email</label>
-      	</div>
-      	<div class="password">
-      		<input type="password" name="password" value="">
-      		<label for="password">Password</label>
-      	</div>
-      	<div class="phoneNumber">
-      		<input type="text" name="phoneNumber" value="">
-      		<label for="phoneNumber">Phone #</label>
-      	</div>
-      	<div class="address">
-      		<div class="aptNumber">
-      			<input type="text" name="aptNumber" value="">
-      			<label for="aptNumber">Appartment #</label>
-      		</div>
-      		<div class="civicNumber">
-      			<input type="text" name="civicNumber" value="">
-      			<label for="civicNumber">Street Number</label>
-      		</div>
-      		<div class="street">
-      			<input type="text" name="street" value="">
-      			<label for="street">Street Name</label>
-      		</div>
-      		<div class="postalCode">
-      			<input type="text" name="postalCode" value="">
-      			<label for="postalCode">Postal Code</label>
-      		</div>
-      	</div>
+<!--              Defining Pop Up for Sharing Page          -->
+  <section class="containerShare">
+    <div class="popUpTop">
+      <div id="closeShare">
+        <img src="img/close.png" />
       </div>
-      </form>
+
+      <h1>Share</h1>
+    </div>
+
+    <div class="share">
+      <div class="facebook">
+        <a href="http://www.facebook.com">Share on Facebook</a>
+      </div>
+
+      <div class="twitter">
+        <a href="http://www.twitter.com">Share on Twitter</a>
+      </div>
+
+      <div class="instagram">
+        <a href="http://www.instagram.com">Share on Instagram</a>
+      </div>
     </div>
   </section>
+
+
+<!--              Defining Pop Up for Payment Page          -->
+  <section class="containerPayment">
+    <div class="popUpTop">
+      <div id="closePayment">
+        <img src="img/close.png" />
+      </div>
+
+      <h1>Payment</h1>
+    </div>
+
+    <div class="payment">
+    </div>
+  </section>
+
+
+<!--              Defining Pop Up for Notification Settings Page          -->
+  <section class="containerNotifications">
+    <div class="popUpTop">
+      <div id="closeNotifications">
+        <img src="img/close.png" />
+      </div>
+
+      <h1>Notifications</h1>
+    </div>
+
+    <div class="notifications">
+      <div class="notification">
+        <input type="checkbox" name="delivery">
+        <label for="delivery">Enable notification when your food is here</label>
+        </div>
+      <div class="notification">
+        <input type="checkbox" name="specials">
+        <label for="specials">Get notified for special offers</label>
+      </div>
+      <div class="notification">
+        <input type="checkbox" name="daily">
+        <label for="daily">Get notified for daily menu</label>
+      </div>
+    </div>
+  </section>
+
+
+
+<!--              Defining Pop Up for About Us Page          -->
+  <section class="containerAbout">
+    <div class="popUpTop">
+      <div id="closeAbout">
+        <img src="img/close.png" />
+      </div>
+
+      <h1>About Us</h1>
+    </div>
+    <div class="about">  
+
+    </div>
+  </section>
+
+
+<!--              Defining Main Central Elements         -->
+<div id="pagepiling">
+  <div id="page1" class="section">
+
+  <div class="top">
+    <h1>Logo</h1>
+  </div>
+    <!-- Each Menu Item is defined here -->  
+  <div class="center">
+    <div class="menuitem">
+      <h2>Menu item #1</h2>
+      <p>10$</p>
+    </div>
+    <div class="menuphoto">
+      <img src="img/meal.png" />
+    </div>
+    <div class="learnMore">
+      <div id="learnMore1">
+        Learn more
+      </div>
+    </div>
+    <div id="itemcounter1">
+      <div class="decreaseCount">-</div>
+      <div class="counter">
+        <p class="count">0</p>
+      </div>
+
+      <div class="increaseCount">+</div>
+    </div>
+  </div>
+  </div>
+  <div id="page2" class="section">
+  <div class="top">
+    <h1>Logo</h1>
+  </div>
+  <div class="center">
+    <div class="menuitem">
+      <h2>Menu item #2</h2>
+      <p>10$</p>
+    </div>
+    <div class="menuphoto">
+      <img src="img/meal.png" />
+    </div>
+    <div class="learnMore">
+      <div id="learnMore2">
+        Learn more
+      </div>
+    </div>
+    <div id="itemcounter2">
+      <div class="decreaseCount">-</div>
+      <div class="counter">
+        <p class="count">0</p>
+      </div>
+      <div class="increaseCount">+</div>
+    </div>
+  </div>
+  </div>
+  <div id="page3" class="section">
+  <div class="top">
+    <h1>Logo</h1>
+  </div>
+  <div class="center">
+    <div class="menuitem">
+      <h2>Menu item #3</h2>
+      <p>10$</p>
+    </div>
+    <div class="menuphoto">
+      <img src="img/meal.png"/>
+    </div>
+    <div class="learnMore">
+      <div id="learnMore3">
+        Learn more
+      </div>
+    </div>
+    <div id="itemcounter3">
+      <div class="decreaseCount">-</div>
+      <div class="counter">
+        <p class="count">0</p>
+      </div>
+      <div class="increaseCount">+</div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+<!--              Defining Order Now Button         -->
+  <div class="orderNow">
+    <p> Order Now </p>
+  </div>
+
 
 </body>
 
