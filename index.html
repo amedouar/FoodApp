@@ -3,7 +3,6 @@
 <head>
   <title>Zeste</title>
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
-  <link type="text/css" rel="stylesheet" href="css/jquery.pagepiling.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
   <!-- Importing jQuery from internet -->
@@ -11,25 +10,8 @@
   <!-- Importing jQuery UI from internet-->
   <script src="js/jquery-ui.js"></script>
   <!-- Importing JS file on CPU-->
-  <script src="js/jquery.pagepiling.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript">
-    var deleteLog = false;
-    $(document).ready(function() {
-        $('#pagepiling').pagepiling({
-          menu: '#menu',
-          anchors: ['page1', 'page2', 'page3'],
-          easing: 'easeInOutCubic',
-          scrollingSpeed: 100,
-          navigation: {
-                'textColor': '#f2f2f2',
-                'bulletsColor': '#ccc',
-                'position': 'right',
-                'tooltips': ['Page 1', 'Page 2', 'Page 3',]
-            }
-      });
-      });
-  </script>
+  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     <meta name="format-detection" content="telephone=no">
@@ -112,9 +94,6 @@
 <!--              Defining Half Page Pop Up for Menu          -->
   <section class="menuCalled">
   <div class="menuContainer">
-    <div class="icon-close">
-        <img src="img/close.png" />
-      </div>
 
     <ul>
         <li><p id="todayMenu">Today's Menu</p></li>
