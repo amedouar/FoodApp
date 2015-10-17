@@ -2,25 +2,26 @@
 <html>
 <head>
   <title>Zeste</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
   <!-- Importing jQuery from internet -->
   <script src="js/jquery.min.js"></script>
   <!-- Importing jQuery UI from internet-->
   <script src="js/jquery-ui.js"></script>
-  <!-- Importing JS file on CPU-->
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height, target-densitydpi=device-dpi">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
 </head>
-<body background="img/back.png" style="background-size:contain">
-
-
+<body background="img/back.png" style="background-size:contain" >
 
 <!--              Defining Pop Up for Profile Page          -->
   <section class="profileContainer">
@@ -108,7 +109,7 @@
   </div>
   </section>
   <div class="homeIcon">
-    <p>Home</p>
+    <img src="img/menu.png"/>
   </div>
 
 
@@ -145,30 +146,28 @@
 
 
 <!--              Defining Pop Up for Sharing Page          -->
-  <section class="containerShare">
-    <div class="popUpTop">
+<div class="social">
       <div id="closeShare">
-        <img src="img/close.png" />
+        <img src="img/close1.png" />
       </div>
-
-      <h1>Share</h1>
-    </div>
-
-    <div class="share">
-      <div class="facebook">
-        <a href="http://www.facebook.com">Share on Facebook</a>
-      </div>
-
-      <div class="twitter">
-        <a href="http://www.twitter.com">Share on Twitter</a>
-      </div>
-
-      <div class="instagram">
-        <a href="http://www.instagram.com">Share on Instagram</a>
-      </div>
-    </div>
-  </section>
-
+<ul class="socialMedia">
+  <li>
+    <a href="http://www.facebook.com">
+      <span id="facebookIcon"></span>
+    </a>
+  </li>
+  <li>
+    <a href="http://www.twitter.com">
+      <span id="twitterIcon"></span>
+    </a>
+  </li>
+  <li>
+    <a href="http://www.instagram.com">
+      <span id="instagramIcon"></span>
+    </a>
+  </li>
+</ul>
+</div>
 
 <!--              Defining Pop Up for Payment Page          -->
   <section class="containerPayment">
@@ -227,14 +226,14 @@
     </div>
   </section>
 
+  <div class="top">
+    <img src="img/logo1.png"/>
+  </div>
 
 <!--              Defining Main Central Elements         -->
-<div id="pagepiling">
+<div>
   <div id="page1" class="section">
 
-  <div class="top">
-    <h1>Logo</h1>
-  </div>
     <!-- Each Menu Item is defined here -->  
   <div class="center">
     <div class="menuitem">
@@ -242,7 +241,7 @@
       <p>10$</p>
     </div>
     <div class="menuphoto">
-      <img src="img/meal.png" />
+      
     </div>
     <div class="learnMore">
       <div id="learnMore1">
@@ -260,16 +259,12 @@
   </div>
   </div>
   <div id="page2" class="section">
-  <div class="top">
-    <h1>Logo</h1>
-  </div>
   <div class="center">
     <div class="menuitem">
       <h2>Menu item #2</h2>
       <p>10$</p>
     </div>
     <div class="menuphoto">
-      <img src="img/meal.png" />
     </div>
     <div class="learnMore">
       <div id="learnMore2">
@@ -286,16 +281,12 @@
   </div>
   </div>
   <div id="page3" class="section">
-  <div class="top">
-    <h1>Logo</h1>
-  </div>
   <div class="center">
     <div class="menuitem">
       <h2>Menu item #3</h2>
       <p>10$</p>
     </div>
     <div class="menuphoto">
-      <img src="img/meal.png"/>
     </div>
     <div class="learnMore">
       <div id="learnMore3">
@@ -319,7 +310,6 @@
   <div class="orderNow">
     <p> Order Now </p>
   </div>
-
 
 </body>
 
