@@ -10,7 +10,7 @@ orderNow();
 counter('#itemcounter1');
 counter('#itemcounter2');
 counter('#itemcounter3');
-swipeTest();
+swiper();
 };
 
 function menuSlide() {
@@ -34,7 +34,7 @@ function menuSlide() {
         $('.profileContainer').slideDown();
         $(".menuCalled").hide();
         $(".menuContainer").show();
-        $(".homeIcon").show();
+        /*$(".homeIcon").show();*/
       };
        if($(event.target).is('#todayMenu')){
         $('.menuCalled').hide();
@@ -47,35 +47,33 @@ function menuSlide() {
         $(".menuCalled").hide();
         $(".menuContainer").show();
         $(".homeIcon").show();
+        $('.top').hide();
       };
       if($(event.target).is('#payment')){
         $('.containerPayment').slideDown();
         $(".menuCalled").hide();
         $(".menuContainer").show();
-        $(".homeIcon").show();
+        /*$(".homeIcon").show();*/
       };
       if($(event.target).is('#notifications')){
         $('.containerNotifications').slideDown();
         $(".menuCalled").hide();
         $(".menuContainer").show();
-        $(".homeIcon").show();
+        /*$(".homeIcon").show();*/
       };
       if($(event.target).is('#about')){
         $('.containerAbout').slideDown();
         $(".menuCalled").hide();
         $(".menuContainer").show();
-        $(".homeIcon").show();
+        /*$(".homeIcon").show();*/
       };
 
   $('#closeProfile').click(function(){
     $('.profileContainer').slideUp();
-    $('.orderNow').show();
-    $('.top').show();
+    $(".homeIcon").show()
   });
   $('.icon-close').click(function(){
     $('.menuCalled').hide();
-    $('.orderNow').show();
-    $('.top').show();
     $(".homeIcon").show();
   });
   $('#closeShare').click(function(){
@@ -85,28 +83,21 @@ function menuSlide() {
   });
   $('body').click(function(){
     $('.social').slideUp();
-    $('.orderNow').show();
-    $('.top').show();
   });
   $('homeIcon').click(function(){
     $('.social').slideUp();
-    $('.orderNow').show();
-    $('.top').show();
   });
   $('#closePayment').click(function(){
     $('.containerPayment').slideUp();
-    $('.orderNow').show();
-    $('.top').show();
+    $(".homeIcon").show()
   });
   $('#closeNotifications').click(function(){
     $('.containerNotifications').slideUp();
-    $('.orderNow').show();
-    $('.top').show();
+    $(".homeIcon").show()
   });
   $('#closeAbout').click(function(){
     $('.containerAbout').slideUp();
-    $('.orderNow').show();
-    $('.top').show();
+    $(".homeIcon").show()
   });
   /*$('.profileContainer').click(function(event)){
     event.stopPropagation();
@@ -121,12 +112,12 @@ function counter(counterNumber) {
   var num;
 
   $(counterNumber).click(function(e){
-    if($(e.target).is('.increaseCount', counterNumber)){
+    if($(e.target).is('.increaseCount > p', counterNumber)){
       num = parseInt($('.count',counterNumber).text(),10) + 1;
       $('.count',counterNumber).text(num);
     };
 
-    if($(e.target).is('.decreaseCount',counterNumber)){
+    if($(e.target).is('.decreaseCount > p',counterNumber)){
       num = parseInt($('.count',counterNumber).text(),10);
       if(num>0){
         num = num - 1;
@@ -144,6 +135,7 @@ function learnMore() {
     $('#description1').hide();
     $('#description2').hide();
     $('#description3').hide();
+    $('.homeIcon').hide();
     if($(event.target).is('#learnMore1')){
     $('#description1').show();
     };
@@ -157,6 +149,7 @@ function learnMore() {
   $('.learnMoreDiv').click(function(){
     $('.learnMoreDiv').hide();
     $('.top').show();
+    $('.homeIcon').show();
   });
 };
 
@@ -188,23 +181,17 @@ function stopProp(a){
   });
 };
 
-
-function swipeTest(){
-  $("body").swipe({
-  swipeRight:function(event, direction, distance, duration, fingerCount) {
-    $(".menuCalled").show("slide",{ direction: "left" }, 400);
-      $(".menuContainer").show("slide",{ direction: "left" }, 400);
-      $(".homeIcon").hide();
-      $('body').fade();  
-    },
-    swipeLeft:function(event, direction, distance, duration, fingerCount){
-      $(".menuCalled").hide("slide",{ direction: "left" }, 400);
-      $(".menuContainer").hide();
-      $(".homeIcon").show();
-    }
-  });
+/* Function that implements 2D Scrolling: Vertical (Different option each day) and Horizontal (Different days)*/
+function swiper() {
+  var swiperH = new Swiper('.swiper-container-h', {
+        pagination: '.swiper-pagination-h',
+        paginationClickable: true,
+        spaceBetween: 50
+    });
+    var swiperV = new Swiper('.swiper-container-v', {
+        pagination: '.swiper-pagination-v',
+        paginationClickable: true,
+        direction: 'vertical',
+        spaceBetween: 50
+    });      
 };
-/*$('#pagepiling').pagepiling({
-    anchors: ['#page1', '#page2', '#page3'],
-    menu: '#myMenu'
-});*/
