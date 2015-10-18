@@ -4,13 +4,16 @@
   <title>Zeste</title>
   <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
   <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
   <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <!-- Importing jQuery from internet -->
   <script src="js/jquery.min.js"></script>
   <!-- Importing jQuery UI from internet-->
   <script src="js/jquery-ui.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script src="js/swiper.jquery.min.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
     <meta name="format-detection" content="telephone=no">
@@ -109,7 +112,7 @@
   </div>
   </section>
   <div class="homeIcon">
-    <img src="img/menu.png"/>
+    <a href="#menu" class="box-shadow-menu"></a>
   </div>
 
 
@@ -226,85 +229,273 @@
     </div>
   </section>
 
-  <div class="top">
+    <div class="top">
     <img src="img/logo1.png"/>
   </div>
 
-<!--              Defining Main Central Elements         -->
-<div>
-  <div id="page1" class="section">
 
-    <!-- Each Menu Item is defined here -->  
-  <div class="center">
-    <div class="menuitem">
-      <h2>Menu item #1</h2>
-      <p>10$</p>
-    </div>
-    <div class="menuphoto">
-      
-    </div>
-    <div class="learnMore">
-      <div id="learnMore1">
-        Learn more
-      </div>
-    </div>
-    <div id="itemcounter1">
-      <div class="decreaseCount">-</div>
-      <div class="counter">
-        <p class="count">0</p>
-      </div>
+<!--              Defining Swiper Container          -->
+<div class="swiper-container swiper-container-h">
+        <div class="swiper-wrapper">
 
-      <div class="increaseCount">+</div>
-    </div>
-  </div>
-  </div>
-  <div id="page2" class="section">
-  <div class="center">
-    <div class="menuitem">
-      <h2>Menu item #2</h2>
-      <p>10$</p>
-    </div>
-    <div class="menuphoto">
-    </div>
-    <div class="learnMore">
-      <div id="learnMore2">
-        Learn more
-      </div>
-    </div>
-    <div id="itemcounter2">
-      <div class="decreaseCount">-</div>
-      <div class="counter">
-        <p class="count">0</p>
-      </div>
-      <div class="increaseCount">+</div>
-    </div>
-  </div>
-  </div>
-  <div id="page3" class="section">
-  <div class="center">
-    <div class="menuitem">
-      <h2>Menu item #3</h2>
-      <p>10$</p>
-    </div>
-    <div class="menuphoto">
-    </div>
-    <div class="learnMore">
-      <div id="learnMore3">
-        Learn more
-      </div>
-    </div>
-    <div id="itemcounter3">
-      <div class="decreaseCount">-</div>
-      <div class="counter">
-        <p class="count">0</p>
-      </div>
-      <div class="increaseCount">+</div>
-    </div>
-  </div>
-  </div>
-</div>
+          <!--              Defining 1st Page            -->
+            <div class="swiper-slide">
+              <div class="date">
+                <h1>Monday</h1>
+              </div>
+              <!--              Setting page as vertical    -->
+                <div class="swiper-container swiper-container-v">
 
 
+                    <div class="swiper-wrapper">
+                      <!--              Defining 1st Element in page    -->
+                        <div class="swiper-slide">
+                          <div id="page1" class="section">
+                            <!-- Each Menu Item is defined here -->  
+                            <div class="center">
+
+                              
+
+                              <div class="menuitem">
+                                <h2>Menu item #1</h2>
+                                  <p>10$</p>
+                              </div>
+                            <div class="learnMore">
+                              <div id="learnMore1">Learn more</div>
+                            </div>
+                            <div id="itemcounter1">
+                              <div class="decreaseCount"><p class="sign">-</p></div>
+                              <div class="counter">
+                                <p class="count">0</p>
+                              </div>
+                              <div class="increaseCount"><p class="sign">+</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        
+                        <!--              Defining 2nd Element in page    -->
+                        <div class="swiper-slide">
+                           <div id="page2" class="section">
+                            <!-- Each Menu Item is defined here -->  
+                            <div class="center">
+                              <div class="menuitem">
+                                <h2>Menu item #2</h2>
+                                  <p>10$</p>
+                              </div>
+                            <div class="learnMore">
+                              <div id="learnMore2">Learn more</div>
+                            </div>
+                            <div id="itemcounter2">
+                              <div class="decreaseCount"><p class="sign">-</p></div>
+                              <div class="counter">
+                                <p class="count">0</p>
+                              </div>
+                              <div class="increaseCount"><p class="sign">+</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        
+
+                        <!--              Defining 3rd Element in page    -->
+                        <div class="swiper-slide">
+                           <div id="page3" class="section">
+                            <!-- Each Menu Item is defined here -->  
+                            <div class="center">
+                              <div class="menuitem">
+                                <h2>Menu item #3</h2>
+                                  <p>10$</p>
+                              </div>
+                            <div class="learnMore">
+                              <div id="learnMore3">Learn more</div>
+                            </div>
+                            <div id="itemcounter3">
+                              <div class="decreaseCount"><p class="sign">-</p></div>
+                              <div class="counter">
+                                <p class="count">0</p>
+                              </div>
+                              <div class="increaseCount"><p class="sign">+</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!--              Defining 2nd Page            -->
+            <div class="swiper-slide">
+              <div class="date">
+                <h1>Tuesday</h1>
+              </div>
+              <!--              Setting page as vertical    -->
+              <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+
+                      <!--              Defining 1st Element in page    -->
+                        <div class="swiper-slide">
+                          <div id="page1" class="section">
+                            <!-- Each Menu Item is defined here -->  
+                            <div class="center">
+
+                              <div class="menuitem">
+                                <h2>Menu item #4</h2>
+                                  <p>10$</p>
+                              </div>
+                            <div class="learnMore">
+                              <div id="learnMore2">Learn more</div>
+                            </div>
+                            <div id="itemcounter3">
+                              <div class="decreaseCount"><p class="sign">-</p></div>
+                              <div class="counter">
+                                <p class="count">0</p>
+                              </div>
+                              <div class="increaseCount"><p class="sign">+</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        
+                        <!--              Defining 2nd Element in page    -->
+                        <div class="swiper-slide">
+                           <div id="page2" class="section">
+                            <!-- Each Menu Item is defined here -->  
+                            <div class="center">
+                              <div class="menuitem">
+                                <h2>Menu item #5</h2>
+                                  <p>10$</p>
+                              </div>
+                            <div class="learnMore">
+                              <div id="learnMore1">Learn more</div>
+                            </div>
+                            <div id="itemcounter1">
+                              <div class="decreaseCount"><p class="sign">-</p></div>
+                              <div class="counter">
+                                <p class="count">0</p>
+                              </div>
+                              <div class="increaseCount"><p class="sign">+</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        
+
+                        <!--              Defining 3rd Element in page    -->
+                        <div class="swiper-slide">
+                           <div id="page3" class="section">
+                            <!-- Each Menu Item is defined here -->  
+                            <div class="center">
+                              <div class="menuitem">
+                                <h2>Menu item #6</h2>
+                                  <p>10$</p>
+                              </div>
+                            <div class="learnMore">
+                              <div id="learnMore1">Learn more</div>
+                            </div>
+                            <div id="itemcounter1">
+                              <div class="decreaseCount"><p class="sign">-</p></div>
+                              <div class="counter">
+                                <p class="count">0</p>
+                              </div>
+                              <div class="increaseCount"><p class="sign">+</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--              Defining 3rd Page            -->
+            <div class="swiper-slide">
+              <div class="date">
+                <h1>Wednesday</h1>
+              </div>
+              <!--              Setting page as vertical    -->
+              <div class="swiper-container swiper-container-v">
+                <!--              Defining 1st Element in page    -->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div id="page1" class="section">
+                            <!-- Each Menu Item is defined here -->  
+                            <div class="center">
+                              <div class="menuitem">
+                                <h2>Menu item #7</h2>
+                                  <p>10$</p>
+                              </div>
+                            <div class="learnMore">
+                              <div id="learnMore1">Learn more</div>
+                            </div>
+                            <div id="itemcounter1">
+                              <div class="decreaseCount"><p class="sign">-</p></div>
+                              <div class="counter">
+                                <p class="count">0</p>
+                              </div>
+                              <div class="increaseCount"><p class="sign">+</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        
+                        <!--              Defining 2nd Element in page    -->
+                        <div class="swiper-slide">
+                           <div id="page2" class="section">
+                            <!-- Each Menu Item is defined here -->  
+                            <div class="center">
+                              <div class="menuitem">
+                                <h2>Menu item #8</h2>
+                                  <p>10$</p>
+                              </div>
+                            <div class="learnMore">
+                              <div id="learnMore1">Learn more</div>
+                            </div>
+                            <div id="itemcounter1">
+                              <div class="decreaseCount"><p class="sign">-</p></div>
+                              <div class="counter">
+                                <p class="count">0</p>
+                              </div>
+                              <div class="increaseCount"><p class="sign">+</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        
+
+                        <!--              Defining 3rd Element in page    -->
+                        <div class="swiper-slide">
+                           <div id="page3" class="section">
+                            <!-- Each Menu Item is defined here -->  
+                            <div class="center">
+                              <div class="menuitem">
+                                <h2>Menu item #9</h2>
+                                  <p>10$</p>
+                              </div>
+                            <div class="learnMore">
+                              <div id="learnMore1">Learn more</div>
+                            </div>
+                            <div id="itemcounter1">
+                              <div class="decreaseCount"><p class="sign">-</p></div>
+                              <div class="counter">
+                                <p class="count">0</p>
+                              </div>
+                              <div class="increaseCount"><p class="sign">+</p></div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
 
 <!--              Defining Order Now Button         -->
   <div class="orderNow">
